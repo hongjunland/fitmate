@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import NavBar from "./components/NavBar";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {
+    BrowserRouter,
+    Routes,
+    Route
+} from "react-router-dom";
+import Home from "./views/Home";
+import Stylist from "./views/Stylist";
+import Stylebook from "./views/Stylebook";
+import Qna from "./views/Qna";
+import Notice from "./views/Notice";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar/>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" elememt ={<Home/>}></Route>
+                <Route path="/stylist" elememt ={<Stylist/>}></Route>
+                <Route path="/stybook" elememt ={<Stylebook/>}></Route>
+                <Route path="/qna" elememt ={<Qna/>}></Route>
+                <Route path="/notice" elememt ={<Notice/>}></Route>
+            </Routes>
+        </BrowserRouter>
     </div>
   );
 }
