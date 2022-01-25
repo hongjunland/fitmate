@@ -1,5 +1,4 @@
 import NavBar from "./components/NavBar";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import {
     BrowserRouter,
     Routes,
@@ -10,18 +9,26 @@ import Stylist from "./views/Stylist";
 import Stylebook from "./views/Stylebook";
 import Qna from "./views/Qna";
 import Notice from "./views/Notice";
+import Signin from "./views/Signin"
+import Signup from "./views/Signup"
+import {useEffect} from "react";
 
 function App() {
+    useEffect(()=>{
+
+    },[])
   return (
     <div className="App">
-      <NavBar/>
         <BrowserRouter>
+            <NavBar/>
             <Routes>
-                <Route path="/" elememt ={<Home/>}></Route>
-                <Route path="/stylist" elememt ={<Stylist/>}></Route>
-                <Route path="/stybook" elememt ={<Stylebook/>}></Route>
-                <Route path="/qna" elememt ={<Qna/>}></Route>
-                <Route path="/notice" elememt ={<Notice/>}></Route>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/stylist"  element ={<Stylist/>}/>
+                <Route path="/stylebook" element ={<Stylebook/>}/>
+                <Route path="/qna" element ={<Qna/>}/>
+                <Route path="/notice" element ={<Notice/>}/>
+                <Route path="/signup" element ={<Signup/>}/>
+                <Route path="/signin" element ={<Signin/>}/>
             </Routes>
         </BrowserRouter>
     </div>

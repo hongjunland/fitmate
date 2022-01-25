@@ -11,24 +11,24 @@ const NavBar = () => {
                             {/*// <!-- 로고 중앙 정렬, 누르면 홈 페이지로 가도록 -->*/}
                             <div id="mainbar" className="col-12 justify-content-center">
                                 <div id="logo">
-                                    <a className="navbar-brand" style={{fontSize:"130%"}}>
-                                        <Link to="/">Fitmate</Link>
-                                    </a>
+                                    <Link to="/" className="navbar-brand" style={{fontSize:"130%"}}>
+                                        Fitmate
+                                    </Link>
                                 </div>
                             </div>
 
                             <div>
                                 <ul className="navbar-nav me-auto mb-2 mb-md-0 justify-content-end">
-                                    {/*<li className="nav-item">*/}
-                                    {/*    <a className="nav-link">*/}
-                                    {/*        <Link to="/Signup">Sign up</Link>*/}
-                                    {/*    </a>*/}
-                                    {/*</li>*/}
-                                    {/*<li className="nav-item">*/}
-                                    {/*    <a className="nav-link">*/}
-                                    {/*        <Link to="/signin">Sign in</Link>*/}
-                                    {/*    </a>*/}
-                                    {/*</li>*/}
+                                    <li className="nav-item">
+                                        <Link to="/signup" className="nav-link">
+                                            Sign up
+                                        </Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link to="/signin" className="nav-link">
+                                            Sign in
+                                        </Link>
+                                    </li>
                                 </ul>
                             </div>
                             {/*// <!-- 아래는 로그인 후 보여지는 것 -->*/}
@@ -45,26 +45,26 @@ const NavBar = () => {
                             {/*// <!-- 언더라인 정렬, 간격은 추후 논의할 것 -->*/}
                             <div>
                                 <ul className="navbar-nav me-auto mb-2 mb-md-0 justify-content-center">
-                                    {/*<li className="nav-item">*/}
-                                    {/*    <a className="mx-4">*/}
-                                    {/*        <Link to="/stylist">Stylist</Link>*/}
-                                    {/*    </a>*/}
-                                    {/*</li>*/}
-                                    {/*<li className="nav-item">*/}
-                                    {/*    <a className="mx-4">*/}
-                                    {/*        <Link to="/stylebook">Style book</Link>*/}
-                                    {/*    </a>*/}
-                                    {/*</li>*/}
-                                    {/*<li className="nav-item">*/}
-                                    {/*    <a className="mx-4">*/}
-                                    {/*        <Link to="/qna">QnA</Link>*/}
-                                    {/*    </a>*/}
-                                    {/*</li>*/}
-                                    {/*<li className="nav-item">*/}
-                                    {/*    <a className="mx-4">*/}
-                                    {/*        <Link to="/notice">Notice</Link>*/}
-                                    {/*    </a>*/}
-                                    {/*</li>*/}
+                                    <li className="nav-item">
+                                        <Link to="/stylist" className="mx-4">
+                                           Stylist
+                                        </Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link to="/stylebook" className="mx-4">
+                                            Style book
+                                        </Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link to="/qna" className="mx-4">
+                                            QnA
+                                        </Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link to="/notice" className="mx-4">
+                                            Notice
+                                        </Link>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
