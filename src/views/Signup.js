@@ -1,7 +1,9 @@
+import {Container} from "reactstrap";
+
 function Signup(){
     return(
         <>
-            <h1>회원가입</h1>
+            <SignupSelect/>
         </>
     )
 }

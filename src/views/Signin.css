@@ -1,0 +1,55 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Cafe24Ohsquare';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Cafe24Ohsquare.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+#app {
+  text-align: center;
+  padding: 5%; }
+
+#signinTitle {
+  font-family: "Cafe24Ohsquare", fantasy; }
+
+#goSignup {
+  color: black;
+  font-weight: bold; }
+
+.xcircle {
+  color: gray; }
+
+#submitBtn {
+  background-color: #7e7fb9;
+  border-color: gray;
+  width: 100%; }
+
+/* 올해의 색상코드: #6667AB */
+#warning {
+  color: red;
+  font-size: 10pt; }
+
+.signup {
+  font-size: 14px; }
+
+p {
+  display: inline; }
+
+.hr-sect {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.452);
+  font-size: 12px;
+  margin: 8px 0px; }
+
+.hr-sect::before,
+.hr-sect::after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0px 16px; }
+
+/*# sourceMappingURL=Signin.css.map */
