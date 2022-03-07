@@ -1,0 +1,84 @@
+server:
+  port: [포트번호]
+  ssl:
+    key-store-type: PKCS12
+    key-store: classpath:[인증서 주소]
+    key-store-password: [인증서 store 비밀번호]
+    key-password: [인증서 비밀번호]
+
+trust:
+  store: classpath:[인증서 주소]
+  store.password: [인증서 비밀번호]
+
+
+springdoc:
+  api-docs:
+    path: /api-docs
+
+# http://서버주소/swagger-ui.html
+  swagger-ui:
+    path: /swagger-ui.html
+
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://[DB주소]:[DB포트]/fitmate?useSSL=false&characterEncoding=UTF-8&serverTimezone=Asia/Seoul
+    username: [사용자명]
+    password: [비밀번호]
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    generate-ddl: true
+    hibernate:
+      # ddl-auto: create-drop
+     ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: false
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: [이메일]
+    password: [비밀번호]
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+logging:
+  level:
+    org:
+      springframework.web.client: DEBUG
+      hibernate.SQL: DEBUG
+      hibernate.type: trace
+
+jwt:
+  header: Authorization
+  secret: [비밀키]
+
+social:
+  kakao:
+    client-id: [클라이언트 키]
+    admin-key: [관리자 키]
+    redirect: [주소]
+    cid: TC0ONETIME
+    url:
+      login: https://kauth.kakao.com/oauth/authorize
+      token: https://kauth.kakao.com/oauth/token
+      profile: https://kapi.kakao.com/v2/user/me
+      unlink: https://kapi.kakao.com/v1/user/unlink
+      payment:
+        ready: https://kapi.kakao.com/v1/payment/ready
+  password: [비밀키]
+cloud:
+  aws:
+    credentials:
+      accessKey: [접근키]
+      secretKey: [비밀키]
+    s3:
+      bucket: [버킷이름]
+    region:
+      static: [버킷지역]
+    stack:
+      auto: false

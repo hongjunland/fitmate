@@ -296,7 +296,7 @@ feat: portfolio 기능 구현
 
 - **서지원(94) / Front-end / UCC 편집**
 
-[yogjesi - Overview](https://github.com/yogjesi)
+![yogjesi - Overview](https://github.com/yogjesi)
 
 - **개발 내용**
     
@@ -338,7 +338,7 @@ feat: portfolio 기능 구현
 
 - **정종혁 / Front-end**
 
-[jjong60 - Overview](https://github.com/jjong60)
+![jjong60 - Overview](https://github.com/jjong60)
 
 - **개발 내용**
     - Front-end 개발
@@ -377,7 +377,7 @@ feat: portfolio 기능 구현
 
 - **박현진 / Front-end**
 
-[jinnydiary - Overview](https://github.com/jinnydiary)
+![jinnydiary - Overview](https://github.com/jinnydiary)
 
 - **개발 내용**
     
@@ -410,7 +410,7 @@ feat: portfolio 기능 구현
 
 - **김동현 / Front-end**
 
-[dtc03003 - Overview](https://github.com/dtc03003)
+![dtc03003 - Overview](https://github.com/dtc03003)
 
 - **개발 내용**
     - Notice, QnA
@@ -434,7 +434,7 @@ feat: portfolio 기능 구현
 
 - **이홍준 / Back-end**
 
-[hongjunland - Overview](https://github.com/hongjunland)
+![hongjunland - Overview](https://github.com/hongjunland)
 
 - **개발 내용**
     - **Back-end 개발**
@@ -484,7 +484,7 @@ feat: portfolio 기능 구현
         - 채팅방 기능
             - 채팅방 컴포넌트 구현
             - Vuex를 이용한 채팅방 상태관리
-            - Axios 기반 비동기 처리로 인증키를 통한 접근 제한(호스트 제외)
+            - Axiois 기반 비동기 처리로 인증키를 통한 접근 제한(호스트 제외)
         - 채팅기능
             - 채팅 컴포넌트 구현
             - 1:1 실시간 채팅 구현, 메시지 교환
@@ -495,7 +495,7 @@ feat: portfolio 기능 구현
         
 - **서지원(96) / Back-end**
 
-[seojiwon0702 - Overview](https://github.com/seojiwon0702/)
+![seojiwon0702 - Overview](https://github.com/seojiwon0702/)
 
 - **개발 내용**
     - 공지사항/질문게시판 CRUD
